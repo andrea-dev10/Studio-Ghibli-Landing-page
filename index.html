@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/index.css">
     <title>Studio Ghibli - Películas</title>
+    <link rel="icon" type="image/png" href="./img/pelicula.png">
 </head>
 <body>
    <header class="header">
     <div class="header-logo">
-<img src="./img/fe1077b7-studio_ghibli_logo (1).jpg" alt="logo de mi página" width="300" height="300">
+<img src="./img/blogger.png" alt="logo de mi página" width="50" height="50">
     </div>
-    <nav class="header-nav">
+    <button class="abrir-menu" id="abrir"><i class="bi bi-list"></i></button>
+    <nav class="header-nav" id="nav">
+        <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
         <ul>
             <li class="nav-ul-li">
                 <a href="#">
@@ -31,68 +36,75 @@
         </ul>
     </nav>
    </header>
-   <main class="main-content">
-    <section class="profile-description">
-        <div class="section-title">
-            <h1 class="title">
-            Andrea Saint @andrea.dev10
-            </h1>
-        </div>
-        <div class="section-paragraph">
-            <p class="paragraph">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolore quidem alias impedit voluptatum necessitatibus, mollitia ad, nisi quam explicabo voluptates eligendi iste esse possimus! Velit, voluptate! Culpa, molestias odit?  
-            </p>
-        </div>
-    </section>
-    <section class="section-photos">
-        <div class="section-title">
-            <h2 class="title">
-                All movies
-            </h2>
-        </div>
-        <div class="photos-container-movies">
-            <div class="photo">
-                <img src="./img/viaje-de-chihiro.png" alt="100" height="100" width="100">
-                <p>El Viaje de Chihiro (2001)</p>
+   <section class="banner">
+    <div class="banner-image">
+        <img src="./img/banner2.png">
+    </div>
+   </section>
+   <div class="wrapper">
+       <main class="main-content">
+        <section class="profile-description">
+            <div class="section-title">
+                <h1 class="title">
+                Andrea Saint @andrea.dev10
+                </h1>
             </div>
-            <div class="photo">
-                <img src="./img/princesse_mononoke_front1.jpg" alt="100" height="100" width="100">
-                <p>La Princesa Monokoke (1997)</p>
+            <div class="section-paragraph">
+                <p class="paragraph"> 
+                    👩‍💻 Hi, this is Andrea! I am currently studying to become a full stack developer, I love computers and movies, so this was the perfect change to mix them. This is one of my very first projects, I hope you like it! 💗🍄🌼
+                </p>
             </div>
-            <div class="photo">
-                <img src="./img/Mi_vecino_Totoro-520484169-large.jpg" alt="100" height="100" width="100">
-                <p>Mi Vecino Totoro (1998)</p>
+        </section>
+        <section class="section-photos">
+            <div class="section-title">
+                <h2 class="title-movies">
+                    All movies
+                </h2>
             </div>
-            <div class="photo">
-                <img src="./img/la-tumba-de-las-luciernagas.jpg" alt="100" height="100" width="100">
-                <p>La Tumba de las Luciérnagas (1988)</p>
+            <div class="photos-container-movies">
+                <div class="photo">
+                    <img src="./img/viaje-de-chihiro.png" alt="100" height="150" width="150">
+                    <p>El Viaje de Chihiro (2001)</p>
+                </div>
+                <div class="photo">
+                    <img src="./img/princesse_mononoke_front1.jpg" alt="100" height="150" width="150">
+                    <p>La Princesa Monokoke (1997)</p>
+                </div>
+                <div class="photo">
+                    <img src="./img/Mi_vecino_Totoro-520484169-large.jpg" alt="100" height="150" width="150">
+                    <p>Mi Vecino Totoro (1998)</p>
+                </div>
+                <div class="photo">
+                    <img src="./img/la-tumba-de-las-luciernagas.jpg" alt="100" height="150" width="150">
+                    <p>La Tumba de las Luciérnagas (1988)</p>
+                </div>
+                <div class="photo">
+                    <img src="./img/porco-rosso-de-hayao-miyazaki.jpg" alt="100" height="150" width="150">
+                    <p>Porco Rosso (1992)</p>
+                </div>
+                <div class="photo">
+                    <img src="./img/castillo-ambulante.jpg" alt="100" height="150" width="150">
+                    <p>El Castillo Ambulante (2004)</p>
+                </div>
+                <div class="photo">
+                    <img src="./img/mis-vecinos-los-yamadas.jpg" alt="100" height="150" width="150">
+                    <p>Mis vecinos los Yamadas (1999)</p>
+                </div>
+                <div class="photo">
+                    <img src="./img/nausica-.jpg" alt="100" height="150" width="150">
+                    <p>Nausicaä del valle del viento (1984)</p>
+                </div>
+                <div class="photo">
+                    <img src="./img/Ponyo_(2008).png" alt="100" height="150" width="150">
+                    <p>Ponyo (2008)</p>
+                </div>
             </div>
-            <div class="photo">
-                <img src="./img/porco-rosso-de-hayao-miyazaki.jpg" alt="100" height="100" width="100">
-                <p>Porco Rosso (1992)</p>
-            </div>
-            <div class="photo">
-                <img src="./img/castillo-ambulante.jpg" alt="100" height="100" width="100">
-                <p>El Castillo Ambulante (2004)</p>
-            </div>
-            <div class="photo">
-                <img src="./img/mis-vecinos-los-yamadas.jpg" alt="100" height="100" width="100">
-                <p>Mis vecinos los Yamadas (1999)</p>
-            </div>
-            <div class="photo">
-                <img src="./img/nausica-.jpg" alt="100" height="100" width="100">
-                <p>Nausicaä del valle del viento (1984)</p>
-            </div>
-            <div class="photo">
-                <img src="./img/Ponyo_(2008).png" alt="100" height="100" width="100">
-                <p>Ponyo (2008)</p>
-            </div>
-        </div>
-    </section>
-   </main> 
+        </section>
+       </main> 
+   </div>
    <footer class="footer">
     <div class="footer-logo">
-        <img src="./img/fe1077b7-studio_ghibli_logo (1).jpg" alt="logo de mi página" width="150" height="150">
+        <img src="./img/logo-footer.png" alt="logo de mi página" width="150" height="150">
     </div>
     <div class="author">
         <p class="made-by">
@@ -101,11 +113,16 @@
     </div>
     <div class="footer-social-media">
         <div class="github-image">
-            <img src="./img/GitHub-Mark.png" alt="50" height="50">
+            <a href="https://github.com/andrea-dev10" target="_blank">
+                <img src="./img/GitHub-Mark.png" alt="50" height="50">
+            </a>
         </div>
         <div class="linkedin-image">
-            <img src="./img/640px-LinkedIn_logo_initials.png" alt="50" height="50">
+            <a href="https://www.linkedin.com/in/andrea-bastardo-636437179/" target="_blank">
+                <img src="./img/640px-LinkedIn_logo_initials.png" alt="50" height="50">
+            </a>
         </div>
    </footer>
+   <script src="./script.js"></script>
 </body>
 </html>

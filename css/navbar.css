@@ -1,0 +1,131 @@
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: var(--Black);
+}
+
+.header-menu {
+    display: flex;
+    align-items: flex-end;
+    width: 30px;
+    height: 50px;
+    margin-right: 10px;
+    cursor: pointer;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-left: auto;
+    margin-bottom: 15px;
+}
+
+@media screen and (min-width:1024px) {
+    .header{
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--Black);
+        height: 80px;
+        padding: 0 15px;
+    }
+    .header-logo {
+        display: flex;
+        align-items: center;
+    }
+    .header-nav {
+        display: flex;
+        align-items: center;
+        width: 320px;
+    }
+    .header-nav ul {
+        list-style-type: none;
+        width: inherit;
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-menu {
+        display: none;
+    }
+    .header-nav ul li.nav-ul-li > a {
+        text-decoration: none;
+        color: var(--White);
+        font-size: medium;
+        font-style: normal;
+        font-weight: bold;
+    }
+    .abrir-menu {
+        display: none;
+    }
+    .cerrar-menu {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 550px) {
+    .abrir-menu, .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: var(--Black);
+        cursor: pointer;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-nav {
+        opacity: 0;
+        visibility: hidden;
+    }
+    .header-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: black;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+    .header-nav.visible {
+        opacity: 1;
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: black;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+    .nav-ul-li {
+        flex-direction: column;
+        align-items: end;
+    }
+    .nav-ul-li a {
+        text-decoration: none;
+        color: #ffff;
+        font-weight: bold;
+        font-size: larger;
+        line-height: 40px;
+    }
+    .header-logo {
+        margin-left: 5px;
+    }
+    .abrir-menu i {
+        font-weight: bolder;
+        color: #ffff;
+        font-size: 2rem;
+    }
+    .cerrar-menu i {
+        font-weight: bolder;
+        color: #ffff;
+        font-size: 2rem;
+    }
+}

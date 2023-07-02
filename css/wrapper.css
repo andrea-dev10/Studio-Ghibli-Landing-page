@@ -1,0 +1,12 @@
+.wrapper {
+    max-inline-size: 1280px;
+    padding: 0 1rem;
+    margin: auto;
+}
+@media screen and (max-width: 550px) {
+    .wrapper {
+        max-inline-size: 600px;
+        padding: 0 0;
+    }
+
+}
